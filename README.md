@@ -9,29 +9,21 @@ Requirements
 
 Installation
 
-    Install required Python packages:
-
     pip install requests biopython
 
-    Ensure naccess is installed and accessible in the system.
+Ensure naccess is installed and accessible in the system.
 
-Usage
-
-Run the script and provide a PDB ID when prompted:
+Usage: Run the script and provide a PDB ID when prompted:
 
 python A1_21CS10075.py
 
-It will:
+It will: Download PDB and FASTA files
+Extract and compare sequences
+Detect chain breaks
+Compute molecular weight and ASA
+Save results to A1_<PDB_ID>.txt
 
-    Download PDB and FASTA files
-    Extract and compare sequences
-    Detect chain breaks
-    Compute molecular weight and ASA
-    Save results to A1_<PDB_ID>.txt
-
-Output
-
-The output file contains:
+Output: The output file contains:
 
 <Chain ID> <Residue Count> <Molecular Weight> <ASA Value>
 
