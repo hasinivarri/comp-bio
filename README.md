@@ -15,12 +15,17 @@ Ensure naccess is installed and accessible in the system.
 
 Usage: Run the script and provide a PDB ID when prompted:
 
-python A1_21CS10075.py
+    python A1_21CS10075.py
 
-It will: Download PDB and FASTA files
+It will: 
+Download PDB and FASTA files
+
 Extract and compare sequences
+
 Detect chain breaks
+
 Compute molecular weight and ASA
+
 Save results to A1_<PDB_ID>.txt
 
 Output: The output file contains:
