@@ -1,38 +1,45 @@
 # comp-bio
 
-Requirements
+Features
 
-    Python 3.x
-    requests library
-    biopython (Bio module)
-    naccess (for ASA calculation)
+Download PDB & FASTA files for a given protein ID
 
-Installation
+Extract & compare sequences from PDB and FASTA files
+    
+Detect mismatches and chain breaks between PDB and FASTA sequences
 
-    pip install requests biopython
+Compute Accessible Surface Area (ASA) using NACCESS
 
-Ensure naccess is installed and accessible in the system.
+Estimate molecular weight of protein chains
 
-Usage: Run the script and provide a PDB ID when prompted:
+Save analysis results in a text file
 
-    python A1_21CS10075.py
+Dependencies
 
-It will: 
-Download PDB and FASTA files
+    Python (≥3.6)
+    Biopython
+    Requests
+    NACCESS (external tool)
 
-Extract and compare sequences
+Usage
 
-Detect chain breaks
+Run the script and enter a Protein ID when prompted.
 
-Compute molecular weight and ASA
+Ensure NACCESS is installed and accessible in the system.
 
-Save results to A1_<PDB_ID>.txt
+Results are saved as A1_<Protein_ID>.txt.
 
-Output: The output file contains:
+Example
 
-<Chain ID> <Residue Count> <Molecular Weight> <ASA Value>
+     python computational_biophysics.py
 
-Notes
+Enter a valid PDB ID (e.g., 4HHB) when prompted.
+Output
 
-    Ensure an internet connection for downloading PDB/FASTA files.
-    NACCESS must be installed for ASA calculations.
+PDB & FASTA files of the given protein ID
+    
+Chain-wise sequence extraction & comparison
+    
+ASA calculations from NACCESS
+
+Final results saved in a text file
